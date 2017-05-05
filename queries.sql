@@ -8,5 +8,5 @@ hashset varchar (1000),
 primary key(link));
 
 DELETE FROM link_data_info
-WHERE (day - now() > 10);
+WHERE (current_date - day > 10);
 
